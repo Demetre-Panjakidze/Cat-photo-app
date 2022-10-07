@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Photo App</title>
+  </head>
+  <body>
+    <h1>CatPhotoApp</h1>
+    <main>
+      <section>
+        <h2>Cat Photos</h2>
+        <p>Click here to view more <a href="https://www.pexels.com/search/cat/" target="_blank">cat photos</a>.</p>
+        <a href="https://www.pexels.com/search/cat/" target="_blank"><img src="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="A photo of a very nice and beautiful cat."></a>
+      </section>
+      <section>
+        <h2>About cats</h2>
+        <h3>Things cats love:</h3>
+        <ul>
+          <li>taking naps</li>
+          <li>scratching and Clawing</li>
+          <li>watching Birds</li>
+          <li>laser pointers</li>
+        </ul>  
+        <figure>
+          <img src="https://guide-images.cdn.ifixit.com/igi/QeHSNVakfnRfP4ls.large" alt="A photo of a laser pointer">
+          <figcaption>Cats <em>love</em> laser pointers</figcaption>
+        </figure>
+        <h3>Things cats hate:</h3>
+        <ul>
+          <li>bathing</li>
+          <li>loud noise</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ul>
+        <figure>
+          <img src="https://images.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg?auto=compress&cs=tinysrgb&w=600" alt="5 kittens next to each other">
+          <figcaption>Cats <b>hate</b> other cats</figcaption>
+        </figure>
+      </section>
+      <section>
+        <h2>Cat Form</h2>
+        <p>Tell me about your cat</p>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+          </fieldset>
+          <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <label><input id="loving" type="checkbox" name="loving-lazy-energetic" value="loving" checked> Loving</label>
+            <label><input id="lazy" type="checkbox" name="loving-lazy-energetic" value="lazy"> Lazy</label>
+            <label><input id="energetic" type="checkbox" name="loving-lazy-energetic" value="energetic"> Energetic</label>
+          </fieldset>
+          <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Cats are great! Love them</p>
+    </footer>
+  </body>
+</html>
